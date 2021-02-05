@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100vh;
+	background-color: #010101;
+  background-image: url('https://lumiere-a.akamaihd.net/v1/images/sa_pixar_virtualbg_toystory_16x9_8461039f.jpeg');
+}
+
+.header {
+
+	color: #F1F1F1;
+	padding: 5px;
+	text-align: center;
+	font-size: 50px;
+	font-family: cursive;
+}
+
+.row {
+	display: -webkit-flex;
+	display: flex;
+}
+
+.column {
+	padding: 10px;
+}
+
+#log {
+	color: #F1F1F1;
+	height: 550px;
+	overflow: auto;
+	display: flex;
+	flex-direction: column-reverse;
+	font-family: cursive;
+}
+
+
+#playerInput {
+	width: 100%;
+}
+
+#stats {
+		background-color: #010101;
+		padding: 10px;
+		size: 50px;
+		margin:10px;
+		color: white;
+		font-family: cursive;
+}
+
+#character {
+		background-color: #010101;
+		padding: 10px;
+		size: 50px;
+		margin:10px;
+		color: white;
+		font-family: cursive;
+}
+
+.column.side {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+
+}
+
+.column.middle {
+	background-color: #010101;
+	-webkit-flex: 2;
+	-ms-flex: 2;
+	flex: 2;
+}
+
+@media (max-width: 600px) {
+	.row {
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+}
+
+
+
+
+/*TypeWritter annimation code
+  CODE BY GEOFF GRAHAM from CSS-TRICKS.com
+  Dec 14, 2017
+  Edited by Freddie Banfield Jan 24, 2021
+*/
+span {
+  border-right: .05em solid;
+  animation: caret 0.25s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
